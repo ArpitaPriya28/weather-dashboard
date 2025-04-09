@@ -44,3 +44,64 @@ It allows users to search for any city and view real-time weather conditions alo
 ```bash
 git clone https://github.com/ArpitaPriya28/weather-dashboard.git
 cd weather-dashboard
+
+2. Install dependencies
+
+npm install 
+
+3. Run the development server
+
+npm run dev
+
+4. Build for production
+
+npm run build
+
+5. Preview the production build
+
+npm run preview
+__________________________________________________________________________________________________________________________________________________________________________
+
+API Integration:
+
+This app uses the OpenWeatherMap Current Weather API.
+
+API Endpoint:
+https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric
+Get your free API key at: https://openweathermap.org/api
+
+Add the key inside your React component (App.jsx) where the fetch call is made.
+
+Deployment Instructions
+This app is deployed using GitHub Pages via the gh-pages npm package.
+
+1. Update vite.config.js
+export default defineConfig({
+  plugins: [react()],
+  base: '/weather-dashboard/' // your GitHub repo name
+});
+
+
+2. Add deploy scripts to package.json
+
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+
+3. Deploy using the command line
+
+npm run deploy
+
+4. App will be live at:
+http://localhost:5173/weather-dashboard/
+_________________________________________________________________________________________________________________________________________________________________________
+
+Contact
+Author: Arpita Priya
+Email: 2205278@kiit.ac.in
+GitHub: https://github.com/ArpitaPriya28/weather-dashboard
+__________________________________________________________________________________________________________________________________________________________________________
+
+License
+This project is open source and free to use for learning purposes.
