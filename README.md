@@ -1,12 +1,46 @@
-# React + Vite
+# Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and dynamic weather dashboard built using **React.js**, **Vite**, and **Tailwind CSS**.  
+It allows users to search for any city and view real-time weather conditions along with a 5-day forecast, powered by the **OpenWeatherMap API**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## Expanding the ESLint configuration
+[Click here to view the live app](https://arpitapriya28.github.io/weather-dashboard/)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+- Search any city to get weather information
+- Current weather display including:
+  - City name
+  - Temperature (°C)
+  - Weather condition icon and description
+  - Humidity and Pressure
+  - Wind speed
+- 5-day weather forecast (fetched from forecast API)
+- Auto-location weather on first load (if permission granted)
+- Loading indicators and error handling
+- Responsive layout for all screen sizes
+
+---
+
+## Tech Stack Used
+
+- **Framework:** React.js with Vite
+- **Styling:** Tailwind CSS
+- **API:** OpenWeatherMap (Current & Forecast)
+- **State Management:** React Hooks (`useState`, `useEffect`)
+- **Deployment:** GitHub Pages (`gh-pages` package)
+
+---
+
+## Setup Instructions
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/ArpitaPriya28/weather-dashboard.git
+cd weather-dashboard
