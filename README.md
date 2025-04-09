@@ -94,7 +94,7 @@ export default defineConfig({
 npm run deploy
 
 4. App will be live at:
-[https://arpitapriya28.github.io/weather-dashboard](https://arpitapriya28.github.io/weather-dashboard)
+https://arpitapriya28.github.io/weather-dashboard
 
 _________________________________________________________________________________________________________________________________________________________________________
 
